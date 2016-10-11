@@ -6589,14 +6589,34 @@
 	        React.createElement(
 	          "div",
 	          { className: "addFormTitle" },
+	          React.createElement(
+	            "h4",
+	            null,
+	            "Recipe name:"
+	          ),
 	          React.createElement("input", { type: "text", value: this.state.title, placeholder: "Add a Recipe", onChange: this.handleTitleChange })
 	        ),
 	        React.createElement("hr", null),
+	        React.createElement(
+	          "h4",
+	          null,
+	          "Image URL:"
+	        ),
 	        React.createElement("input", { type: "text", className: "imgUrl", value: this.state.image, placeholder: "Add an URL Image", onChange: this.handleImageChange }),
 	        React.createElement("hr", null),
+	        React.createElement(
+	          "h4",
+	          null,
+	          "Ingredients:"
+	        ),
 	        React.createElement(Ingredients, { addIngredient: this.addIngredientToList }),
 	        React.createElement(IngredientsList, { ingredientsList: this.state.ingredients, cancelIngredient: this.cancelIngredient, isRecipeSaved: false }),
 	        React.createElement("hr", null),
+	        React.createElement(
+	          "h4",
+	          null,
+	          "Description:"
+	        ),
 	        React.createElement("textarea", { id: "textarea", value: this.state.description, onChange: this.handleTextAreaChange }),
 	        React.createElement("hr", null),
 	        React.createElement(
