@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy|Raleway');
+
+$font-header: 'Chewy', cursive;
+$font-stack: 'Raleway', sans-serif;
+$font-recipeTitle: 'Chewy', cursive;
+$primary-color: #ECE4B7;
+$first-color: #F1F7ED;
+$second-color: #D36135;
+$third-color: #243E36;
+$fourth-color: #659373;
+$background-color: #FFF;
+$text-color-dark:#000;
+$text-color-pale:#FFF;
+$genericMargin: 10px;
+
+body {
+  color: $text-color-dark;
+  background-color: $background-color;
+}
+
+.title {
+  font: 300% $font-header;
+  color: $text-color-dark;
+  text-align: center;
+}
+
+.recipeList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid $second-color;
+}
+
+.addForm {
+  margin: $genericMargin;
+  color: $text-color-pale;
+}
+
+.addNewRecipeBtn {
+  div {
+    font: 100% $font-header;
+    display: none;
+    color: $fourth-color;
+    padding-left: 10px;
+  }
+  button:hover + div {
+    display: inline-block;
+  }
+}
+
+button {
+  padding: 0 4px;
+  background-color: transparent;
+  border: 4px solid $second-color;
+  border-radius: 20px;
+  i {
+    color: $text-color-dark;
+  }
+  &:hover {
+    background-color: $second-color;
+    i {
+      color: $text-color-pale;
+    }
+  }
+}
+
+.description {
+  font-size: 120%;
+  font-family: $font-stack;
+}
+
+input {
+  font-size: 140%;
+  font-family: $font-stack;
+  border: none;
+  border-bottom: 2px solid $first-color;
+  background-color: transparent;
+
+  &:focus {
+    border: none;
+    border-bottom: 3px solid $second-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  font-size: 120%;
+  font-family: $font-stack;
+  color: $text-color-dark;
+  width: 100%;
+  border: none;
+  background-color: $first-color;
+  border-radius: 15px;
+  &:focus {
+    outline: none;
+    border: 3px solid $second-color;
+    border-radius: 15px;
+  }
+}
+
+.addIngredient {
+  margin: 10px 0;
+  input {
+    width: 85%;
+  }
+  button {
+    width: 15%;
+  }
+}
+
+.addFormTitle {
+  margin: 10px 0;
+  input {
+    width: 100%;
+  }
+}
+
+.recipesList {
+  color: $text-color-dark;
+  border: 5px solid $second-color;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.ingredientsName {
+  font-size: 140%;
+  font-family: $font-stack;
+}
+
+.singleRecipe {
+  font-size: 140%;
+  font-family: $font-recipeTitle;
+  margin: $genericMargin;
+  width: 300px;
+  border-radius: 5px;
+  background-color: $fourth-color;
+  padding: 5px;
+
+  i {
+    display: none;
+  }
+
+  &:hover {
+    i {
+      display: inline;
+    }
+  }
+}
+
+.recipeTrash {
+  float: right;
+  &:hover {
+    color: $second-color;
+  }
+}
+
+.modal-content {
+  background-color: $primary-color;
+  padding: 10px;
+  border: 3px solid $second-color;
+}
+
+.zeroPage {
+  font-size: 140%;
+  font-family: $font-recipeTitle;
+  color: $fourth-color;
+}
+
+.imgUrl {
+  width: 100%;
+}
